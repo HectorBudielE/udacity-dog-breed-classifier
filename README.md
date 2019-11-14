@@ -4,6 +4,7 @@
 [image2]: ./images/vgg16_model.png "VGG-16 Model Layers"
 [image3]: ./images/vgg16_model_draw.png "VGG16 Model Figure"
 
+# Dog-breed Classifier
 
 ## Project Overview
 
@@ -21,13 +22,12 @@ Along with exploring state-of-the-art CNN models for classification and localiza
 1. Clone the repository and navigate to the downloaded folder.
 	
 	```	
-		git clone https://github.com/udacity/deep-learning-v2-pytorch.git
-		cd deep-learning-v2-pytorch/project-dog-classification
+		git clone https://github.com/HectorBudielE/udacity-dog-breed-classifier.git
+		cd udacity-dog-breed-classifier
 	```
-	
-__NOTE:__ if you are using the Udacity workspace, you *DO NOT* need to re-download the datasets in steps 2 and 3 - they can be found in the `/data` folder as noted within the workspace Jupyter notebook.
 
 2. Download the [dog dataset](https://s3-us-west-1.amazonaws.com/udacity-aind/dog-project/dogImages.zip).  Unzip the folder and place it in the repo, at location `path/to/dog-project/dogImages`.  The `dogImages/` folder should contain 133 folders, each corresponding to a different dog breed.
+
 3. Download the [human dataset](http://vis-www.cs.umass.edu/lfw/lfw.tgz).  Unzip the folder and place it in the repo, at location `path/to/dog-project/lfw`.  If you are using a Windows machine, you are encouraged to use [7zip](http://www.7-zip.org/) to extract the folder. 
 4. Make sure you have already installed the necessary Python packages according to the README in the program repository.
 5. Open a terminal window and navigate to the project folder. Open the notebook and follow the instructions.
@@ -40,6 +40,18 @@ __NOTE:__ While some code has already been implemented to get you started, you w
 
 __NOTE:__ In the notebook, you will need to train CNNs in PyTorch.  If your CNN is taking too long to train, feel free to pursue one of the options under the section __Accelerating the Training Process__ below.
 
+## Project Information
+
+### Contents
+
+- Intro
+- Step 0: Import Datasets
+- Step 1: Detect Humans
+- Step 2: Detect Dog
+- Step 3: Create a CNN to Classify Dog Breeds (from Scratch)
+- Step 4: Create a CNN to Classify Dog Breeds (using Transfer Learning)
+- Step 5: Write Your Algorithm
+- Step 6: Test Your Algorithm
 
 
 ## (Optionally) Accelerating the Training Process 
@@ -49,20 +61,3 @@ If your code is taking too long to run, you will need to either reduce the compl
 #### Amazon Web Services
 
 You can use Amazon Web Services to launch an EC2 GPU instance. (This costs money, but enrolled students should see a coupon code in their student `resources`.)
-
-## Evaluation
-
-Your project will be reviewed by a Udacity reviewer against the CNN project rubric.  Review this rubric thoroughly and self-evaluate your project before submission.  All criteria found in the rubric must meet specifications for you to pass.
-
-
-## Project Submission
-
-Your submission should consist of the github link to your repository.  Your repository should contain:
-- The `dog_app.ipynb` file with fully functional code, all code cells executed and displaying output, and all questions answered.
-- An HTML or PDF export of the project notebook with the name `report.html` or `report.pdf`.
-
-Please do __NOT__ include any of the project data sets provided in the `dogImages/` or `lfw/` folders.
-
-### Ready to submit your project?
-
-Click on the "Submit Project" button in the classroom and follow the instructions to submit!
